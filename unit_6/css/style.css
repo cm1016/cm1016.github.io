@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css?family=Merienda|Merriweather|Montserrat+Subrayada:400,700');
+
+body {
+    color: #FFF1D3;
+    background-color: #FFF1D3;
+}
+
+.wrapper {
+}
+
+#one {
+    padding: 0px;
+}
+
+#two_column {
+    padding: 0px;
+}
+
+#left {
+    padding: 20px 0 20px 50px;
+    float: left;
+    width: 60%;
+}
+
+#right {
+    padding: 0 60px 0 50px;
+    float: left;   
+    width: 250px;
+
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+header {
+    background: #FFF1D3 url(../images/table-food-pic.jpg) no-repeat center top;
+    height: 552px;
+}
+
+nav {
+    background-color: #03054f;
+}
+
+#nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+}
+
+#nav li {
+    float: left;
+}
+
+#nav a {
+    display: block;
+    color: #FFF1D3;
+    padding: 20px 60px;
+    text-decoration: none;
+    background-color: #03054f;
+    text-align: center;
+}
+
+#nav a:hover {
+    background-color: #FFF1D3;
+    color: #03054f;
+}
+
+article {
+    padding: 20px;
+    width: 500px;
+    margin: auto;
+}
+
+footer {
+    padding: 0px;
+}
+
+h1 {
+    color: #03054f;
+    background-color: #FFF1D3;
+    text-align: center;
+    font-family: 'Montserrat Subrayada', sans-serif;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+h2 {
+    color: #03054f;
+    background-color: #FFF1D3;
+    text-align: left;
+    font-family: 'Helvetica', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    line-height: 2em;
+}
+
+p {
+    color: #03054f;
+    background-color: #FFF1D3;
+    text-align: left;
+    font-family: 'Merriweather', serif;
+}
+
+.testimonial_quote {
+    text-align: left;
+    font-family: 'Merienda', sans-serif;
+    line-height: 1em;      
+}
+
+.testimonial_person {
+    text-align: right;
+    font-family: 'Merriweather', serif;
+    font-size: 12px;
+    line-height: .5em;    
+}
+
+#slogan {
+	font-family: 'Merienda', cursive;
+	font-weight: bold;
+    text-align: center;
+}
+
+ul {
+    color: #03054f;
+    background-color: #FFF1D3;
+    font-family: 'Merriweather', serif;
+    list-style-type: square;
+    line-height: 1.5em;
+}
+
+#contact {
+	text-align: right;
+	font-size: 12px;
+}
