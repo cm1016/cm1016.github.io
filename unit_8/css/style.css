@@ -37,7 +37,7 @@ aside {
 }
 
 #right {
-    padding: 10px 0 0 20px;
+    padding: 5px 0 0 20px;
     float: left;
 }
 
@@ -188,12 +188,15 @@ ul {
         height: 440px;
     }
     h1 {
-        font-size: 2em;
+        font-size: 2.2em;
     }
     article {
         padding: 20px;
         width: 100%;
         margin: auto;
+    }
+    body {
+        font-size: .9em;
     }
     #right {
         padding: 5px 0 0 0;
