@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Merienda|Merriweather|Montserrat+Subrayada:400,700');
 
 body {
-    color: #FFF1D3;
     background-color: #FFF1D3;
 }
 
@@ -26,18 +25,20 @@ article {
 }
 
 aside {
-    padding: 20px;
-    width: 38%;
-    margin: auto;
+    width: 36%;
+    margin-top: 20px;
+    margin-left: 10px;
+    background: #03054f;
+    border-radius: 10px;
 }
 
 #left {
-    padding: 20px 0 0 0px;
+    padding: 5px 5px 5px 0px;
     float: left;
 }
 
 #right {
-    padding: 5px 0 0 20px;
+    padding: 0 10px 10px 10px;
     float: left;
 }
 
@@ -51,8 +52,12 @@ aside {
 }
 
 header {
-    background: #FFF1D3 url(../images/table-food-pic.jpg) no-repeat center top;
-    height: 552px;
+    background: #FFF1D3 url(../images/table-food-pic.jpg) no-repeat center bottom;
+    height: 110px;
+}
+
+#index {
+    height: 440px;
 }
 
 nav {
@@ -67,7 +72,19 @@ nav {
     width: 100%;
 }
 
+#nav_short {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+}
+
 #nav li {
+    float: left;
+}
+
+#nav_short li {
     float: left;
 }
 
@@ -78,11 +95,49 @@ nav {
     text-decoration: none;
     background-color: #03054f;
     text-align: center;
+    width: 100px;
+}
+
+#nav_short a {
+    display: block;
+    color: #FFF1D3;
+    padding: 10px 60px;
+    text-decoration: none;
+    background-color: #03054f;
+    text-align: center;
+    width: 100px;
+}
+
+#home a {
+    padding: 10px 5px;
+    width: 80px;
+    background-color: #FFF1D3;
+    color: #03054f;
+    border-radius: 10px;
+}
+
+#blank {
+    background-color: #FFF1D3;
+    width: 20px;
 }
 
 #nav a:hover {
     background-color: #FFF1D3;
     color: #03054f;
+}
+
+#nav_short a:hover {
+    background-color: #FFF1D3;
+    color: #03054f;
+}
+
+#home a:hover {
+    background-color: #03054f;
+    color: #FFF1D3;
+}
+
+#blank a:hover {
+    background-color: #03054f;
 }
 
 footer {
@@ -100,17 +155,19 @@ h1 {
 
 h2 {
     color: #03054f;
-    background-color: #FFF1D3;
     text-align: left;
     font-family: 'Helvetica', sans-serif;
     font-size: 1.5em;
     text-transform: uppercase;
-    line-height: 2em;
+    line-height: 1em;
+}
+
+.aside {
+    color: #FFF1D3;
 }
 
 p {
     color: #03054f;
-    background-color: #FFF1D3;
     text-align: left;
     font-family: 'Merriweather', serif;
 }
@@ -120,6 +177,7 @@ p {
     font-family: 'Merienda', sans-serif;
     line-height: 1.3em;
     margin-top: 5px;
+    color: #FFF1D3;
 }
 
 .testimonial_person {
@@ -127,10 +185,12 @@ p {
     font-family: 'Merriweather', serif;
     font-size: .7em;
     line-height: .5em;
-    margin-bottom: 5px;  
+    margin-bottom: 5px;
+    color: #FFF1D3;
 }
 
 #slogan {
+    background-color: #FFF1D3;
 	font-family: 'Merienda', cursive;
 	font-weight: bold;
     text-align: center;
@@ -150,43 +210,44 @@ ul {
     margin-top: 20px;
 }
 
-@media screen and (max-width: 1130px) {
+@media screen and (max-width: 1130px) and (min-width: 770px) {
     article {
         width: 55%;
     }
 
     aside {
-        width: 42%;
+        width: 38%;
     }
 }
 
 @media screen and (max-width: 770px) and (min-width: 640px) {
-    header {
-        height: 440px;
-    }
     h1 {
         font-size: 2em;
     }
     article {
         padding: 20px;
         width: 100%;
-        margin: auto;
+        margin: 0 20px 0 0;
+    }
+    body {
+        font-size: .9em;
     }
     #right {
-        padding: 5px 0 0 0;
+        padding: auto;
+        margin: 0 20px 0 0;
         float: left;   
-        width: 100%;
+        width: 97%;
     }
     .testimonial_person {
         text-align: left;
         padding-left: 50px;
     }
+    #nav a {
+        padding: 20px 40px;
+    }
 }
 
 @media screen and (max-width: 640px) and (min-width: 520px) {
-    header {
-        height: 440px;
-    }
     h1 {
         font-size: 2.2em;
     }
@@ -199,9 +260,10 @@ ul {
         font-size: .9em;
     }
     #right {
-        padding: 5px 0 0 0;
+        padding: auto;
+        margin: 0 20px 0 0;
         float: left;   
-        width: 100%;
+        width: 97%;
     }
 
     #contact {
@@ -210,13 +272,13 @@ ul {
     }
 
     #nav a {
-        padding: 20px 40px;
+        padding: 20px 30px;
+        width: 100px;
     }
 }
 
 @media screen and (max-width: 520px) {
-    header {
-        background: #FFF1D3 url(../images/table-food-pic.jpg) no-repeat center bottom;
+    #index {
         height: 300px;
 
     }
@@ -238,19 +300,21 @@ ul {
         font-size: .9em;
     }
     #right {
-        padding: 5px 0 0 0;
+        padding: auto;
+        margin: 0 20px 0 0;
         float: left;   
-        width: 100%;
+        width: 95%;
     }
 
     #contact {
         text-align: left;
-        margin-top: 40px;
+        margin-top: 20px;
     }
 
     #nav a {
         display: display;
         padding: 20px 60px;
+        width: auto;
     }
 
     #nav li {
